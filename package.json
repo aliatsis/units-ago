@@ -1,0 +1,34 @@
+{
+  "name": "units-ago",
+  "version": "1.0.0",
+  "description": "Parse whole time units from a given date",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/tape/bin/tape **/*.spec.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliatsis/units-ago.git"
+  },
+  "keywords": [
+    "time",
+    "ago",
+    "since",
+    "units",
+    "moment"
+  ],
+  "author": "Anthony Liatsis <anthony.liatsis@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aliatsis/units-ago/issues"
+  },
+  "homepage": "https://github.com/aliatsis/units-ago#readme",
+  "devDependencies": {
+    "tap-spec": "~4.1.1",
+    "tape": "~4.4.0"
+  },
+  "dependencies": {
+    "capitalize": "~1.0.0",
+    "moment": "~2.11.0"
+  }
+}
