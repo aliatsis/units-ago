@@ -1,6 +1,6 @@
 {
   "name": "units-ago",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse whole time units from a given date",
   "main": "index.js",
   "scripts": {
