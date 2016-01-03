@@ -10,13 +10,13 @@ function get(unitMap, startOfUnit) {
   return moment().subtract(moment.duration(unitMap)).startOf(startOfUnit);
 }
 
-function parse(date, baseUnit) {
+function parse(date, baseUnit, startDate) {
   date = moment(new Date(date || Date.now()));
 
   return [
     'years', 'months', 'days', 'hours', 'minutes', 'seconds', 'milliseconds'
   ].reduce(function(result, unit) {
-    result[unit] = moment().diff(date, unit, true);
+    result[unit] = moment(startDate || Date.now()).diff(date, unit, true);
 
     if (baseUnit && unit !== baseUnit) {
       var asUnitFn = 'as' + capitalize(unit);
